@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Body of the android me -->
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body_part_imageview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</ImageView>
