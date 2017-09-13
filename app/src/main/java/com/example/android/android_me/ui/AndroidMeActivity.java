@@ -43,13 +43,15 @@ public class AndroidMeActivity extends AppCompatActivity {
         BodyPartFragment legs = new BodyPartFragment();
         legs.setPart_list(AndroidImageAssets.getLegs());
         FragmentManager leg_manager = getSupportFragmentManager();
+        Intent i = getIntent();
 
         if (savedInstanceState == null) {
             head.setPart_index(1);
             body.setPart_index(1);
             legs.setPart_index(1);
-        } else {
-            Intent i = getIntent();
+        }
+
+        if (i != null) {
             Bundle b = i.getExtras();
             head.setPart_index(b.getInt("HEAD_INDEX"));
             body.setPart_index(b.getInt("BODY_INDEX"));

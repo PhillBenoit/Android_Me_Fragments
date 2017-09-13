@@ -3,13 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <Button
-        android:id="@+id/master_list_next_button"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1"
-        android:text="Next"/>
 
     <GridView
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -23,7 +16,16 @@
         android:numColumns="3"
         android:padding="16dp"
         android:stretchMode="columnWidth"
+        android:layout_weight="7"
         android:verticalSpacing="8dp">
     </GridView>
+
+    <Button
+        android:id="@+id/master_list_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Next"/>
 
 </LinearLayout>
